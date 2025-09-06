@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
 
-    /* Orange primary color like Evrone */
-    --primary: 15 100% 50%;
+    /* DNK Mobile brand color #0385FF */
+    --primary: 212 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 98%;
@@ -28,21 +28,22 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 15 100% 95%;
-    --accent-foreground: 15 100% 40%;
+    --accent: 212 100% 95%;
+    --accent-foreground: 212 100% 40%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 92%;
     --input: 0 0% 92%;
-    --ring: 15 100% 50%;
+    --ring: 212 100% 50%;
 
     /* Custom design tokens for DNK Mobile */
     --hero-text: 0 0% 8%;
     --text-secondary: 0 0% 35%;
+    --brand-blue: 212 100% 50%;
+    --brand-blue-light: 212 100% 95%;
     --brand-orange: 15 100% 50%;
-    --brand-orange-light: 15 100% 95%;
     --brand-green: 150 80% 40%;
     --surface-light: 0 0% 98%;
     --surface-white: 0 0% 100%;
@@ -72,7 +73,7 @@ All colors MUST be HSL.
     --popover: 0 0% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 15 100% 50%;
+    --primary: 212 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 15%;
@@ -81,15 +82,15 @@ All colors MUST be HSL.
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 15 100% 20%;
-    --accent-foreground: 15 100% 90%;
+    --accent: 212 100% 20%;
+    --accent-foreground: 212 100% 90%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 15 100% 50%;
+    --ring: 212 100% 50%;
 
     /* Dark mode custom tokens */
     --hero-text: 0 0% 95%;

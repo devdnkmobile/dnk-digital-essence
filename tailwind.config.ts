@@ -58,8 +58,9 @@ export default {
 				// DNK Mobile custom colors
 				'hero-text': 'hsl(var(--hero-text))',
 				'text-secondary': 'hsl(var(--text-secondary))',
+				'brand-blue': 'hsl(var(--brand-blue))',
+				'brand-blue-light': 'hsl(var(--brand-blue-light))',
 				'brand-orange': 'hsl(var(--brand-orange))',
-				'brand-orange-light': 'hsl(var(--brand-orange-light))',
 				'brand-green': 'hsl(var(--brand-green))',
 				'surface-light': 'hsl(var(--surface-light))',
 				'surface-white': 'hsl(var(--surface-white))'
