@@ -4,6 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import SEOHead from "@/components/ui/SEOHead";
+import blogMobileDev from "@/assets/blog-mobile-development.jpg";
+import blogBlockchain from "@/assets/blog-blockchain.jpg";
+import blogAiMl from "@/assets/blog-ai-ml.jpg";
+import blogReactPerf from "@/assets/blog-react-performance.jpg";
+import blogCyberSec from "@/assets/blog-cybersecurity.jpg";
 
 // Mock data для статей блога
 const blogPosts = [
@@ -18,7 +23,7 @@ const blogPosts = [
     readTime: "5 мин чтения",
     category: "Мобильная разработка",
     tags: ["React Native", "Flutter", "iOS", "Android", "AI"],
-    image: "/api/placeholder/600/300",
+    image: blogMobileDev,
     featured: true
   },
   {
@@ -32,7 +37,7 @@ const blogPosts = [
     readTime: "7 мин чтения",
     category: "Блокчейн",
     tags: ["Blockchain", "Smart Contracts", "Web3", "DeFi"],
-    image: "/api/placeholder/600/300",
+    image: blogBlockchain,
     featured: false
   },
   {
@@ -46,7 +51,7 @@ const blogPosts = [
     readTime: "10 мин чтения",
     category: "Искусственный интеллект",
     tags: ["AI", "Machine Learning", "ChatGPT", "API"],
-    image: "/api/placeholder/600/300",
+    image: blogAiMl,
     featured: true
   },
   {
@@ -60,7 +65,7 @@ const blogPosts = [
     readTime: "8 мин чтения",
     category: "Веб-разработка",
     tags: ["React", "Performance", "Optimization", "JavaScript"],
-    image: "/api/placeholder/600/300",
+    image: blogReactPerf,
     featured: false
   },
   {
@@ -74,7 +79,7 @@ const blogPosts = [
     readTime: "6 мин чтения",
     category: "Кибербезопасность",
     tags: ["Security", "OWASP", "Penetration Testing", "DevSecOps"],
-    image: "/api/placeholder/600/300",
+    image: blogCyberSec,
     featured: false
   }
 ];

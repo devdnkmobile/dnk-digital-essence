@@ -5,6 +5,8 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import SEOHead from "@/components/ui/SEOHead";
+import blogMobileDev from "@/assets/blog-mobile-development.jpg";
+import blogBlockchain from "@/assets/blog-blockchain.jpg";
 
 // Mock данные для статей (в реальном проекте это будет API или CMS)
 const blogPosts = {
@@ -17,7 +19,7 @@ const blogPosts = {
     readTime: "5 мин чтения",
     category: "Мобильная разработка",
     tags: ["React Native", "Flutter", "iOS", "Android", "AI"],
-    image: "/api/placeholder/800/400",
+    image: blogMobileDev,
     content: `
 # Введение
 
@@ -113,7 +115,7 @@ PWA продолжают набирать популярность благод�
     readTime: "7 мин чтения",
     category: "Блокчейн",
     tags: ["Blockchain", "Smart Contracts", "Web3", "DeFi"],
-    image: "/api/placeholder/800/400",
+    image: blogBlockchain,
     content: `Блокчейн технологии перестали быть только криптовалютной экзотикой. Сегодня они предлагают реальные решения для бизнеса в различных отраслях.
 
 ## Ключевые преимущества блокчейна для бизнеса

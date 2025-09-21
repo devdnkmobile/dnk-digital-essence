@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import SEOHead from "@/components/ui/SEOHead";
+import projectFintech from "@/assets/project-fintech.jpg";
+import projectEcommerce from "@/assets/project-ecommerce.jpg";
+import projectIot from "@/assets/project-iot.jpg";
 
 const Projects = () => {
   const projects = [
@@ -13,7 +16,7 @@ const Projects = () => {
       description: "Комплексное решение для управления инвестиционными портфелями с интеграцией банковских API и аналитикой в реальном времени.",
       industry: "Финансы",
       technologies: ["React", "Node.js", "PostgreSQL", "Redis", "Docker"],
-      image: "/placeholder.svg",
+      image: projectFintech,
       category: "Веб-платформа",
       year: "2024"
     },
@@ -23,7 +26,7 @@ const Projects = () => {
       description: "Высоконагруженная платформа для онлайн-торговли с системой персонализированных рекомендаций на основе машинного обучения.",
       industry: "Электронная коммерция",
       technologies: ["Vue.js", "Python", "TensorFlow", "MongoDB", "Kubernetes"],
-      image: "/placeholder.svg",
+      image: projectEcommerce,
       category: "Маркетплейс",
       year: "2024"
     },
@@ -33,7 +36,7 @@ const Projects = () => {
       description: "Система сбора и анализа данных с IoT-устройств в реальном времени для предиктивного обслуживания оборудования.",
       industry: "Промышленность",
       technologies: ["Angular", "Python", "InfluxDB", "MQTT", "Grafana"],
-      image: "/placeholder.svg",
+      image: projectIot,
       category: "IoT платформа",
       year: "2023"
     },
@@ -176,11 +179,11 @@ const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
                 <Card key={project.id} className="card-hover overflow-hidden border-0 shadow-sm">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/20 overflow-hidden">
                     <img
                       src={project.image}
                       alt={`Проект ${project.title}`}
-                      className="w-16 h-16 opacity-50"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <CardContent className="p-6">

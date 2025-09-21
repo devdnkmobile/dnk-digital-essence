@@ -3,6 +3,10 @@ import { ArrowRight, Code, Smartphone, Globe, Brain, Cpu, Shield } from "lucide-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/ui/SEOHead";
+import heroImage from "@/assets/hero-image.jpg";
+import projectFintech from "@/assets/project-fintech.jpg";
+import projectEcommerce from "@/assets/project-ecommerce.jpg";
+import projectIot from "@/assets/project-iot.jpg";
 
 const Home = () => {
   const services = [
@@ -43,19 +47,19 @@ const Home = () => {
       title: "Финтех платформа",
       description: "Комплексное решение для управления финансами с интеграцией банковских API",
       industry: "Финансы",
-      image: "/placeholder.svg",
+      image: projectFintech,
     },
     {
       title: "E-commerce маркетплейс",
       description: "Высоконагруженная платформа для онлайн-торговли с AI-рекомендациями",
       industry: "Электронная коммерция",
-      image: "/placeholder.svg",
+      image: projectEcommerce,
     },
     {
       title: "IoT система мониторинга",
       description: "Система сбора и анализа данных с IoT-устройств в реальном времени",
       industry: "Промышленность",
-      image: "/placeholder.svg",
+      image: projectIot,
     },
   ];
 
@@ -78,8 +82,15 @@ const Home = () => {
       />
 
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-background to-surface-light">
-        <div className="container-custom">
+      <section className="relative section-padding bg-gradient-to-br from-background to-surface-light overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <img 
+            src={heroImage} 
+            alt="DNK Mobile IT команда разработчиков"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="hero-text mb-6">
               Разрабатываем цифровые продукты, которые трансформируют бизнес
@@ -191,11 +202,11 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="card-hover overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
+                <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/20 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-16 h-16 opacity-50"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <CardContent className="p-6">

@@ -1,6 +1,7 @@
 import { Users, Target, Award, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/ui/SEOHead";
+import teamImage from "@/assets/team-image.jpg";
 
 const About = () => {
   const team = [
@@ -20,8 +21,15 @@ const About = () => {
       />
 
       <div className="min-h-screen">
-        <section className="section-padding bg-gradient-to-br from-background to-surface-light">
-          <div className="container-custom">
+        <section className="relative section-padding bg-gradient-to-br from-background to-surface-light overflow-hidden">
+          <div className="absolute inset-0 opacity-5">
+            <img 
+              src={teamImage} 
+              alt="Команда DNK Mobile - профессиональные разработчики"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="container-custom relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl lg:text-5xl font-bold text-hero-text mb-6">
                 О компании DNK Mobile
@@ -61,7 +69,9 @@ const About = () => {
               {team.map((member, index) => (
                 <Card key={index} className="text-center">
                   <CardContent className="p-6">
-                    <div className="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-4" />
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <Users className="w-8 h-8 text-primary" />
+                  </div>
                     <h3 className="font-semibold text-hero-text">{member.name}</h3>
                     <p className="text-text-secondary text-sm">{member.role}</p>
                     <p className="text-primary text-xs">{member.experience}</p>
